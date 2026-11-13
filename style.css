@@ -1,0 +1,21 @@
+/* Welty's own white ground, ink text and sky links, so the policy reads as the same product. */
+:root { --ground: #fff; --ink: #0b1b2b; --quiet: #5b6b7b; --line: #e4e9ee; --link: #0077cc; --wash: #f3f6f9; }
+@media (prefers-color-scheme: dark) {
+  :root { --ground: #0a1119; --ink: #f3f7fb; --quiet: #9aa9b8; --line: #1e2a36; --link: #5cbdff; --wash: #121c27; }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 48px 20px 96px; background: var(--ground); color: var(--ink);
+  font: 17px/1.6 -apple-system, system-ui, "Segoe UI", Roboto, sans-serif; -webkit-text-size-adjust: 100%;
+}
+main { max-width: 42rem; margin: 0 auto; }
+.eyebrow { font-weight: 700; color: var(--link); margin: 0 0 10px; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 8px; }
+h2 { font-size: 1.25rem; margin: 40px 0 12px; }
+p, li { margin: 0 0 12px; }
+ul { padding-left: 1.2em; }
+a { color: var(--link); text-underline-offset: 3px; }
+.updated { color: var(--quiet); font-size: .9rem; margin: 0 0 28px; }
+.note { background: var(--wash); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; margin: 20px 0; }
+.note p:last-child { margin-bottom: 0; }
+footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--quiet); font-size: .9rem; }
