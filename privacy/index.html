@@ -11,7 +11,7 @@
 <header>
   <p class="eyebrow">Welty</p>
   <h1>Privacy policy</h1>
-  <p class="updated">Last updated 13 November 2026</p>
+  <p class="updated">Last updated 17 November 2026</p>
 </header>
 
 <p>Welty is a personal finance app for recording money, budgeting and learning.
@@ -20,8 +20,8 @@ This page says what the app collects, where it goes and how to remove it.</p>
 <h2>What stays on your phone</h2>
 <ul>
   <li>Everything you record works without an account. Until you sign in, your data is kept only on your phone.</li>
-  <li>A typed line the phone can read, such as "lunch 12", is read and recorded on the phone. It is not sent to any AI service.</li>
-  <li>Your questions and Welty's answers in the chat are kept on your phone and are not synced.</li>
+  <li>Until you sign in, the chat with Welty is kept only on your phone.</li>
+  <li>Photos you add to the chat are kept only on your phone.</li>
   <li>Sample data never leaves the phone.</li>
 </ul>
 
@@ -30,22 +30,27 @@ This page says what the app collects, where it goes and how to remove it.</p>
 <ul>
   <li>Your account: the email address and user ID from Apple or Google sign-in, and the name you choose to show your partner.</li>
   <li>Your household's money data: recorded lines, budgets, goals, accounts and balances, recurring items, debts and month-end reviews.</li>
+  <li>The chat with Welty: what you typed and what Welty replied, so your partner's phone shows the same conversation and it survives a new phone.</li>
   <li>A count of how many AI requests you made each day, used only to cap use.</li>
+  <li>If you subscribe: the App Store transaction Apple signs for your subscription, used only to check that your plan is active.</li>
 </ul>
 <p>Everyone in your household space can see that space's money data. Nobody else can.</p>
 
 <h2>What is sent to Google Gemini</h2>
-<p>Only after you tap Allow, and only for these three things:</p>
+<p>Welty's assistant runs on Google Gemini. The first time you open the chat signed in, Welty asks first.
+Nothing is sent to Google unless you tap "Got it, continue". If you tap "Not now", nothing is sent: lines like "lunch 12" are still recorded on the phone, and Welty asks again the next time you send a question or a photo.</p>
+<p>Once you agree, these are sent:</p>
 <ul>
-  <li><strong>A question about your money, or a typed line the phone could not read.</strong> Welty sends your message, the last few messages of that conversation, and a summary of your numbers: totals by category, your budget lines, your goals and your money health. Names of people are not sent. Individual recorded lines are not sent.</li>
-  <li><strong>A receipt photo.</strong> The photo is sent so the total can be read.</li>
-  <li><strong>An Excel or CSV file.</strong> The file is sent to our server, which reads it in memory. The header and the first 8 rows are sent to Google so it can say which column is which. The rest is converted by our own code.</li>
+  <li><strong>Every message you type in the chat</strong> (a line to record, a question, or a change). Welty sends your message, the last few messages of that day's conversation, your first name if you gave one, and a summary of your numbers: totals by category, your budget lines, your goals, your accounts and your money health. Other people's names and your email are not sent. Individual recorded lines are not sent.</li>
+  <li><strong>Photos you add to a message</strong> (up to five), so Welty can read them.</li>
 </ul>
-<p>Our server does not store the photo or the file.</p>
+<p>When Welty can't be reached (no connection, or not signed in), the phone records what it can read on its own and nothing is sent. Our server does not store the photos.</p>
 <div class="note">
 <p>Welty currently uses Google's free Gemini API tier. On that tier Google may use what is sent to provide, improve and develop its products, and human reviewers may read it. Do not send anything you would not want read.</p>
-<p>You can turn this off at any time in Settings, under Your data, "Answers from Google Gemini". Recording by typing keeps working without it.</p>
 </div>
+
+<h2>Subscriptions</h2>
+<p>Payments are handled by Apple. We never see your card or Apple Account details. To manage or cancel a subscription, open Settings on your iPhone, tap your name, then Subscriptions.</p>
 
 <h2>What we don't do</h2>
 <ul>
@@ -58,8 +63,8 @@ This page says what the app collects, where it goes and how to remove it.</p>
 <h2>Your choices</h2>
 <ul>
   <li><strong>Export:</strong> Settings, Export as CSV, or Back up everything.</li>
-  <li><strong>Delete:</strong> Settings, Delete account. This removes your account and your data from our server. If you share a space, it passes to your partner.</li>
-  <li><strong>Turn AI off:</strong> Settings, "Answers from Google Gemini".</li>
+  <li><strong>Delete:</strong> Settings, Delete account. This removes your account and your data from our server, and, if you signed in with Apple, revokes Welty's access to your Apple sign-in. If you share a space, it passes to your partner.</li>
+  <li><strong>The assistant:</strong> tap "Not now" on the chat's first card to keep everything on your phone.</li>
 </ul>
 
 <h2>Children</h2>
@@ -72,7 +77,7 @@ This page says what the app collects, where it goes and how to remove it.</p>
 <p>Questions, corrections, or a request to delete your data: write to
 <a href="mailto:nafasbaru.id@gmail.com">nafasbaru.id@gmail.com</a>.</p>
 
-<footer>Welty, <a href="mailto:nafasbaru.id@gmail.com">nafasbaru.id@gmail.com</a></footer>
+<footer>Welty, <a href="../support/">Support</a>, <a href="mailto:nafasbaru.id@gmail.com">nafasbaru.id@gmail.com</a></footer>
 </main>
 </body>
 </html>
